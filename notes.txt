@@ -1,0 +1,12 @@
+
+
+backprop:
+- addition is a distributor of gradient. grad is same for input and output
+- gradient begins with 1 on the last node since it doesn't affect 
+
+- multiplication: gradient is the product of data of "cur value" and the grad of the output node
+    - this means that the value of the weights/weights directly impact the gradient of the other 
+
+
+- in the _backwards() function that we define for each operation (e.g. self, other turn into out), 
+    we set/calculate the graient of self and other based on 1) local deravative/gradient and 2) out.grad aka the piece of chainrule that the the graient of the output 
